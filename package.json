@@ -1,0 +1,27 @@
+{
+  "name": "mesha-test-atividade2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcelotk15/mesha-test-atividade2.git",
+  "author": "Marcelo Augusto <marcelotk_15@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot",
+    "build": "webpack --mode production --progress --hide-modules"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-react": "^7.10.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1"
+  }
+}
