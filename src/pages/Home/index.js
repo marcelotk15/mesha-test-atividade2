@@ -26,7 +26,11 @@ export default function Home() {
       reader.onload = (e) => {
         const csv = e.target.result;
 
-        const titles = csv.slice(0, csv.indexOf("\n")).split(";");
+        const titles = csv
+          .slice(0, csv.indexOf("\n"))
+          .split(";")
+          .join(",")
+          .split(",");
 
         setColumns(
           titles.map((field) => ({
@@ -39,7 +43,7 @@ export default function Home() {
         const rows = csv.slice(csv.indexOf("\n") + 1).split("\n");
 
         const rowsFormatted = rows.map((row) => {
-          const values = row.split(";");
+          const values = row.split(";").join(",").split(",");
 
           return titles.reduce(
             (object, curr, i) => ((object[curr] = values[i]), object),
