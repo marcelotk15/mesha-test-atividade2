@@ -1,3 +1,16 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-export const App = () => <h1>Hello React</h1>;
+import Routes from "./routes";
+import GlobalStyle from "./globalStyle";
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Routes />
+        <GlobalStyle />
+      </BrowserRouter>
+    );
+  }
+}
