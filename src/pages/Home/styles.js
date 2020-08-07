@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 70%;
+  width: 65%;
 `;
 
 export const CSVRender = styled.div`
