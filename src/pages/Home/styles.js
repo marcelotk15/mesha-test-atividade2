@@ -6,7 +6,12 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #e8efff;
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    324deg,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(48, 48, 48, 1) 100%
+  );
 `;
 
 export const Content = styled.div`
